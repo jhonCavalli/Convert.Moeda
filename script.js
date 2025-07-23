@@ -39,8 +39,10 @@ const API_URL =" https://v6.exchangerate-api.com/v6/5d4653edf286154e58f67721/lat
 
 
         }
-        catch(error) {
-            alert("Erro ao converter moeda. Por favor, tente novamente mais tarde.");
+        catch(err) {
+            error.style.display = "block";
+            error.innerHTML = "Erro ao converter moeda. Verifique os valores inseridos e tente novamente.";
+            
 
         }
         finally {
