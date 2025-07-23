@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevClub Convert.Moeda</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao DevClub Convert.Moeda</h1>
+
+        <form class="converter-form" id="ConvertForm">
+            <div class="currency-row">
+                <div class="currency-input">
+                    <label for="amount">Valor</label>
+                    <input type="number" id="amount" name="amount" placeholder="Digite o valor" step="0.1" min="0" required>
+                </div>
+
+                <div class="currency-select">
+                    <label for="fromCurrency">De</label>
+                    <select id="fromCurrency" required></select>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
