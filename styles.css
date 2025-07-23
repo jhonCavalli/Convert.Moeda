@@ -100,19 +100,27 @@ label {
 
 .loading {
     margin: 20px;
+    display: none;
 }
 
 .spinner {
     border: 3px solid #f3f3f3; /* Light grey */
     border-top: 3px solid #667eea; /* Blue */
     border-radius: 50%;
+    height: 30px;
     width: 30px;
     margin: 0 auto;
-    animation: spin 1s linear infinite;
+    animation: spin 0.5s linear infinite;
 }
 
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.info {
+    margin-top: 30px;
+    font-size: 15px;
+    color: #333;
 }
