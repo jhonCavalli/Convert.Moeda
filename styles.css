@@ -37,16 +37,18 @@ h1 {
 }
 
 .currency-row {
-
+    display: flex;
+    gap: 15px;
+    align-items: end;
 }
 
 
 .currency-input {
-
+    flex: 2;
 }
 
 .currency-select {
-
+    flex: 1;
 }  
 
 
