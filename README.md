@@ -1,34 +1,40 @@
 # Convert.Moeda
-  DevClub 
+  # 💸 DevClub Conversor de Moedas
 
-  # 💱 Conversor de Moeda
+Conversor de moedas moderno e responsivo feito com **HTML, CSS e JavaScript puro**, integrando a API da [ExchangeRate-API](https://www.exchangerate-api.com/) para taxas em tempo real.
 
-Conversor de moeda moderno feito com **HTML**, **CSS** e **JavaScript**.
-
----
-
-## 🎯 Funcionalidades
-
-- ✅ Conversão entre moedas (BRL, USD, EUR, etc.)
+![Preview do Projeto](preview.png)
 
 ---
 
-## 🖥️ Tecnologias Usadas
+## 🚀 Funcionalidades
 
-| Tecnologia | Descrição |
-|------------|-----------|
-| **HTML5** | Estrutura semântica do app |
-| **CSS3** | Estilização moderna com foco em responsividade |
-| **JavaScript (ES6+)** | Lógica da conversão + consumo de API |
-
+- Conversão entre **10 moedas internacionais** populares
+- Integração com **API externa** para taxas atualizadas
+- Interface limpa, responsiva e intuitiva
+- **Loading spinner** durante requisição
+- Tratamento de erros de conexão ou resposta inválida
 
 ---
 
-## 🚀 Como Usar
+## 🛠️ Tecnologias Utilizadas
 
-1. Clone este repositório:
+- HTML5
+- CSS3 (Flexbox + Gradientes)
+- JavaScript (ES6+)
+- [ExchangeRate-API](https://www.exchangerate-api.com/)
+
+---
+
+## 🧪 Como usar localmente
 
 ```bash
-git clone https://github.com/seu-usuario/conversor-moeda.git
+# Clone o repositório
+git clone https://github.com/jhoncavalli/devclub-conversor-moeda.git
+
+# Acesse o diretório
+cd devclub-conversor-moeda
+
+# Abra o index.html em seu navegador
 
 
