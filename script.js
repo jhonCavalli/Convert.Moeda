@@ -21,7 +21,19 @@ const API_URL =" https://v6.exchangerate-api.com/v6/5d4653edf286154e58f67721/lat
 
             const rate = data.rates[toCurrency.value];
             const convertedRate = (amount.value * rate).toFixed(2);
-            
+
+            convertedAmount.value = convertedValue;
+
+            result.innerHTML = `
+                <div style="fonte-size:1.4rem;>
+                    &{amount.value} ${fromCurrency.value} = ${convertedAmount} ${toCurrency.value}.
+                </div>
+                <div style="font-size:1.2rem opacity:0.8; martin-top:0.5rem;">
+                    Taxa: 1 ${fromCurrency.value} = ${rate} ${toCurrency.value}
+                </div>
+            `;
+
+
         }
         catch(error) {
             alert("Erro ao converter moeda. Por favor, tente novamente mais tarde.");
