@@ -2,7 +2,7 @@ const form = document.getElementById("ConvertForm");
 const amount = document.getElementById("amount");
 const fromCurrency = document.getElementById("fromCurrency");
 const toCurrency = document.getElementById("toCurrency");
-const convertedAmout = document.getElementById("convertedAmout");
+const convertedAmount = document.getElementById("convertedAmout");
 const loading = document.querySelector(".loading");
 const result = document.querySelector(".result");
 const error = document.querySelector(".error");
@@ -13,6 +13,8 @@ const API_URL =" https://v6.exchangerate-api.com/v6/5d4653edf286154e58f67721/lat
 
    async function convertMoney() {
         loading.style.display = "block";
+        error.style.display = "none";
+        result.style.display = "none";
         
 
         try {
@@ -23,6 +25,7 @@ const API_URL =" https://v6.exchangerate-api.com/v6/5d4653edf286154e58f67721/lat
             const convertedRate = (amount.value * rate).toFixed(2);
 
             convertedAmount.value = convertedValue;
+            result.style.display = "block";
 
             result.innerHTML = `
                 <div style="fonte-size:1.4rem;>
@@ -37,8 +40,11 @@ const API_URL =" https://v6.exchangerate-api.com/v6/5d4653edf286154e58f67721/lat
         }
         catch(error) {
             alert("Erro ao converter moeda. Por favor, tente novamente mais tarde.");
-        }
 
+        }
+        finally {
+            loading.style.display = "none";
+        }
     }
 
 
