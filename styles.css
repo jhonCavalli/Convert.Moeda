@@ -108,6 +108,7 @@ label {
     border-radius: 50%;
     width: 30px;
     margin: 0 auto;
+    animation: spin 1s linear infinite;
 }
 
 
