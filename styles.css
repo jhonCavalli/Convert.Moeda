@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    background: linear-gradient(to right, #434343 0%, black 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -146,4 +152,29 @@ label {
     border-radius: 15px;
     margin-top: 20px;
     display: none;
+}
+
+.footer {
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 10rem;
+    border-top: 1px solid #7c7c7c;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+}
+
+.footer a {
+    color: #3f4c6b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
