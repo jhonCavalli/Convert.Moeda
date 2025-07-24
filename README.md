@@ -3,7 +3,7 @@
 
 Conversor de moedas moderno e responsivo feito com **HTML, CSS e JavaScript puro**, integrando a API da [ExchangeRate-API](https://www.exchangerate-api.com/) para taxas em tempo real.
 
-![Preview do Projeto](preview.png)
+![Preview do Projeto](img/Captura%20de%20tela%202025-07-23%20214539.png)
 
 ---
 

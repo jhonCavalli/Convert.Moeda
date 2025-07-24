@@ -158,14 +158,12 @@ label {
     background: linear-gradient(to right, #434343 0%, black 100%);
     color: #fff;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    margin-top: 10rem;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 40px;
     border-top: 1px solid #7c7c7c;
-    position: absolute;
-    bottom: 0;
-    top: auto;
     width: 100%;
+    flex-shrink: 0;
 }
 
 .footer a {
