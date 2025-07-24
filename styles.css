@@ -186,3 +186,10 @@ label {
     opacity: 0.5;
 }
 
+.img-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
